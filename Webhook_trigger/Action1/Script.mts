@@ -4,14 +4,14 @@
 
 set wshshell = createobject("wscript.shell")
 wshShell.Run("ubuntu")
-wait 2
+wait 10
 wshshell.SendKeys "bash webhook-trigger.sh", wait(5) 
-wait 2
+wait 10
 wshShell.SendKeys "{ENTER}"
 wait 10
 wshShell.SendKeys "exit"
-wait 2
+wait 10
 wshShell.SendKeys "{ENTER}"
-wait 2
+wait 10
 set wshShell = Nothing
 
